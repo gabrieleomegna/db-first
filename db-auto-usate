@@ -1,0 +1,18 @@
+Nome tabella: auto-usate
+
+
+id - intero - MEDIUMINT - PRIMARY_KEY - UNIQUE - AUTO_INCREMENT - NOT NULL
+modello - stringa - VARCHAR(50) - NOT NULL
+marca - stringa - VARCHAR(20) - NOT NULL
+targa - stringa - VARCHAR(7) - UNIQUE - NULL 
+km - float - FLOAT(7,1) - NOT NULL 
+n_porte - intero - TINYINT - NOT NULL - DEFAULT(4)
+cambio - stringa - VARCHAR(20) - NOT NULL - DEFAULT('manuale')
+colore - stringa - VARCHAR (15) - NOT NULL
+disponibilità - booleano - BOOLEAN(/TINYINT) - NOT NULL - DEFAULT (TRUE)
+data_immatricolazione - DATE - NOT NULL
+omologazione_EURO - intero - TINYINT - NOT NULL - DEFAULT(1)
+venditore - stringa - VARCHAR(40) - NULL 
+locazione_venditore - stringa - VARCHAR(30) - NOT NULL
+n_proprietari - intero - TINYINT - DEFAULT(1) - NOT NULL
+prezzo - float - FLOAT(8,2) - NULL 
